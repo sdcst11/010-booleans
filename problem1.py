@@ -2,7 +2,8 @@
 
 # Have the user enter a number 
 # Determine if the number is an even number. 
-# Hint: Use the modulus, which determines the remainder when two numbers are divided
+# There are many ways to solve this problem
+# Hint: One method is to use the modulus, which determines the remainder when two numbers are divided
 # 1 mark
 
 # Inputs:
