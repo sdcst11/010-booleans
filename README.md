@@ -6,19 +6,16 @@ Objectives:
 * Identify Uses for Boolean type Variables
 * Evaluate Boolean Expressions
 
-Imagine you open up your phone settings.  There are a lot of different buttons or "toggles" that 
-you might be see.  For example:
+Imagine you open up your phone settings.  There are a lot of different buttons or "toggles" that you might be see.  For example:
 ![toggle image](https://cdn.dribbble.com/users/6179/screenshots/726313/toggle-switches.jpg)
 
-This is a great example of a Boolean variable.  A boolean stores only 2 possible values, unlike
-a str, float or int that can store almost an infinite number of different possible values. There
-are many different ways to think of these 2 states:
+This is a great example of a Boolean variable.  A boolean stores only 2 possible values, unlikea str, float or int that can store almost an infinite number of different possible values. There are many different ways to think of these 2 states:
 
-on or off \
-yes or no \
-1 or 0 \
-Enabled or Disabled \
-True or False \
+on or off  
+yes or no  
+1 or 0  
+Enabled or Disabled  
+True or False  
 
 Python uses the values **True** or **False** as the values that a boolean can store
 ```
@@ -26,9 +23,7 @@ Python uses the values **True** or **False** as the values that a boolean can st
 hasKey = True
 doorLocked = False
 ```
-Note the absence of quotation marks around the values being stored into the variables
-*hasKey* and *doorLocked*.  Also, the capitalization is important - the first character
-must be upper case.
+Note the absence of quotation marks around the values being stored into the variables *hasKey* and *doorLocked*.  Also, the capitalization is important - the first character must be upper case.
 
 There are many different ways that you might see a Boolean used or how you might use them:
 * To see if a setting has been enabled or disabled. This is sometimes called a toggle or flag
@@ -40,7 +35,7 @@ There are many different ways that you might see a Boolean used or how you might
 A conditional statement is one that is evaluated as True or False. You can kind of think of it as a question.
 There are several different conditional operators
 
-Consider 2 variables or values: \
+Consider 2 variables or values:  
 ```
 a == b    Checks to see if the 2 values are equal
 a > b     Checks to see if a is greater than b
@@ -52,23 +47,42 @@ a < b < c Python also supports multiple comparisons using the less than and grea
 ```
 These all work for both numerical values (int and float) as well as for strings
 
-"in" is a special conditional operator that compares a number or string with a number of possible values.  It can be used to see if one string
-can be found somewhere in the other string. These 2 strings are sometimes referred to as the
-"needle" and the "haystack" \
-It can also be used to see if a number is within a specified range, equal to or greater than the first value,
-but less than the second value.
+"in" is a special conditional operator that compares a number or string with a number of possible values.  It can be used to see if one string can be found somewhere in the other string. These 2 strings are sometimes referred to as the
+"needle" and the "haystack"  
+It can also be used to see if a number is within a specified range, equal to or greater than the first value, but less than the second value.
+
+
+### Strings with the in operator
+"needle" in "haystack"  
+"i" in "team" is evaluated as False  
+"fun" in "funeral" is evaluated as True  
 ```
-examples:
+if "fun" in "funeral":
+  print("fun is in funeral")
 
-Strings
-"needle" in "haystack"
-"i" in "team" is evaluated as False
-"fun" in "funeral" is evaluated as True
+if "i" in "team":
+  print('there is an i in team)
+else:
+  print("there is no i in team")
+```
 
-Numbers
+We can also see if something is **not** in a string
+```
+if not "fun" in "funeral":
+  print('there is no fun in a funeral')
+else:
+print('there is fun in a funeral')
+```
+
+
+### Numbers
+```
 10 in range(1,100) is True
 1 in range(1,100) is True
 100 in range(1,100) is False
+
+if 10 in range(1,20):
+  print('10 is in the range of numbers that begins with 1 and ends at, but does not include, 20')
 ```
 
 ### IF and IF/ELSE statements ###
